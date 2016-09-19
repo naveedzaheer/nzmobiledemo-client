@@ -31,8 +31,12 @@
      * @event
      */
     function onDeviceReady() {
+
         // Create a connection reference to our Azure Mobile Apps backend
         client = new WindowsAzure.MobileServiceClient('https://nzmobiledemo.azurewebsites.net');
+
+        client.login('aad')
+    .then(function () {
 
         // Create a table reference
         todoItemTable = client.getTable('todoitem');
@@ -43,6 +47,7 @@
         // Wire up the UI Event Handler for the Add Item
         $('#add-item').submit(addItemHandler);
         $('#refresh').on('click', refreshDisplay);
+    }, handleError);
     }
 
     /**

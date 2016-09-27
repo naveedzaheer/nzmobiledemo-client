@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>NZAHEER-SP3</Machine>
+    <WindowsUser>naveedzaheer</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>debug|x64</SolutionConfiguration>
+    <PackageArchitecture>x64</PackageArchitecture>
+    <PackageIdentityName>com.microsoft.azure.mobileapps.nzmobiledemo</PackageIdentityName>
+    <PackageIdentityPublisher>CN=Apache Cordova Team</PackageIdentityPublisher>
+    <IntermediateOutputPath>C:\github\democlient\nzmobiledemo-client\platforms\windows\build\windows\bld\</IntermediateOutputPath>
+    <RemoteDeploymentType></RemoteDeploymentType>
+    <PackageRegistrationPath></PackageRegistrationPath>
+    <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\build\windows\debug\x64\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\plugins\cordova-plugin-ms-adal\adal-netcore45\Microsoft.IdentityModel.Clients.ActiveDirectory.winmd">
+      <PackagePath>Microsoft.IdentityModel.Clients.ActiveDirectory.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\plugins\cordova-sqlite-storage\src\windows\SQLite3-Win-RT\SQLite3\SQLite3.Windows\x64\debug\SQLite3.Windows\SQLite3.winmd">
+      <PackagePath>SQLite3.winmd</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\plugins\cordova-sqlite-storage\src\windows\SQLite3-Win-RT\SQLite3\SQLite3.Windows\x64\debug\SQLite3.Windows\SQLite3.dll">
+      <PackagePath>SQLite3.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\images\SplashScreen.scale-100.png">
+      <PackagePath>images\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\images\Square150x150Logo.scale-100.png">
+      <PackagePath>images\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\images\Square30x30Logo.scale-100.png">
+      <PackagePath>images\Square30x30Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\images\Square310x310Logo.scale-100.png">
+      <PackagePath>images\Square310x310Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\images\Square44x44Logo.scale-100.png">
+      <PackagePath>images\Square44x44Logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\images\Square70x70Logo.scale-100.png">
+      <PackagePath>images\Square70x70Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\images\Square71x71Logo.scale-100.png">
+      <PackagePath>images\Square71x71Logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\images\StoreLogo.scale-100.png">
+      <PackagePath>images\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\images\Wide310x150Logo.scale-100.png">
+      <PackagePath>images\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\cordova-js-src\exec.js">
+      <PackagePath>www\cordova-js-src\exec.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\cordova-js-src\platform.js">
+      <PackagePath>www\cordova-js-src\platform.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\cordova.js">
+      <PackagePath>www\cordova.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\cordova_plugins.js">
+      <PackagePath>www\cordova_plugins.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\js\index.js">
+      <PackagePath>www\js\index.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\js\jquery-2.1.4.min.js">
+      <PackagePath>www\js\jquery-2.1.4.min.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\plugins\cordova-plugin-inappbrowser\src\windows\InAppBrowserProxy.js">
+      <PackagePath>www\plugins\cordova-plugin-inappbrowser\src\windows\InAppBrowserProxy.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\plugins\cordova-plugin-inappbrowser\www\inappbrowser.js">
+      <PackagePath>www\plugins\cordova-plugin-inappbrowser\www\inappbrowser.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\plugins\cordova-plugin-ms-adal\src\windows\ADALProxy.js">
+      <PackagePath>www\plugins\cordova-plugin-ms-adal\src\windows\ADALProxy.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\plugins\cordova-plugin-ms-adal\www\AuthenticationContext.js">
+      <PackagePath>www\plugins\cordova-plugin-ms-adal\www\AuthenticationContext.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\plugins\cordova-plugin-ms-adal\www\AuthenticationResult.js">
+      <PackagePath>www\plugins\cordova-plugin-ms-adal\www\AuthenticationResult.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\plugins\cordova-plugin-ms-adal\www\CordovaBridge.js">
+      <PackagePath>www\plugins\cordova-plugin-ms-adal\www\CordovaBridge.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\plugins\cordova-plugin-ms-adal\www\TokenCache.js">
+      <PackagePath>www\plugins\cordova-plugin-ms-adal\www\TokenCache.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\plugins\cordova-plugin-ms-adal\www\TokenCacheItem.js">
+      <PackagePath>www\plugins\cordova-plugin-ms-adal\www\TokenCacheItem.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\plugins\cordova-plugin-ms-adal\www\UserInfo.js">
+      <PackagePath>www\plugins\cordova-plugin-ms-adal\www\UserInfo.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\plugins\cordova-plugin-ms-adal\www\utility.js">
+      <PackagePath>www\plugins\cordova-plugin-ms-adal\www\utility.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\plugins\cordova-plugin-ms-azure-mobile-apps\www\MobileServices.Cordova.Ext.js">
+      <PackagePath>www\plugins\cordova-plugin-ms-azure-mobile-apps\www\MobileServices.Cordova.Ext.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\plugins\cordova-plugin-ms-azure-mobile-apps\www\MobileServices.Cordova.js">
+      <PackagePath>www\plugins\cordova-plugin-ms-azure-mobile-apps\www\MobileServices.Cordova.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\plugins\cordova-sqlite-storage\src\windows\sqlite-proxy.js">
+      <PackagePath>www\plugins\cordova-sqlite-storage\src\windows\sqlite-proxy.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\plugins\cordova-sqlite-storage\src\windows\SQLite3-Win-RT\SQLite3JS\js\SQLite3.js">
+      <PackagePath>www\plugins\cordova-sqlite-storage\src\windows\SQLite3-Win-RT\SQLite3JS\js\SQLite3.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\plugins\cordova-sqlite-storage\www\SQLitePlugin.js">
+      <PackagePath>www\plugins\cordova-sqlite-storage\www\SQLitePlugin.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\scripts\platformOverrides.js">
+      <PackagePath>www\scripts\platformOverrides.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\scripts\winstore-jscompat.js">
+      <PackagePath>www\scripts\winstore-jscompat.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\WinJS\js\base.js">
+      <PackagePath>www\WinJS\js\base.js</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\css\inappbrowser.css">
+      <PackagePath>www\css\inappbrowser.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\css\index.css">
+      <PackagePath>www\css\index.css</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\www\index.html">
+      <PackagePath>www\index.html</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\config.xml">
+      <PackagePath>config.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\github\democlient\nzmobiledemo-client\platforms\windows\build\windows\debug\x64\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\">
+      <Name>Microsoft.WinJS.2.0</Name>
+      <Version>1.0.9600.17018</Version>
+      <Architecture>Neutral</Architecture>
+      <FrameworkIdentity>Name=Microsoft.WinJS.2.0, MinVersion=1.0.9600.17018</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.WinJS.2.0\1.0\Microsoft.WinJS.2.0.appx</AppxLocation>
+      <MoreInfo>http://go.microsoft.com/fwlink/%3fLinkId=260891</MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\">
+      <Name>Microsoft.VCLibs.120.00.Debug</Name>
+      <Version>12.0.21005.1</Version>
+      <Architecture>ARM</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.120.00.Debug, MinVersion = 12.0.21005.1</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\.\AppX\Debug\ARM\Microsoft.VCLibs.ARM.Debug.12.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\">
+      <Name>Microsoft.VCLibs.120.00.Debug</Name>
+      <Version>12.0.21005.1</Version>
+      <Architecture>x64</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.120.00.Debug, MinVersion = 12.0.21005.1</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\.\AppX\Debug\x64\Microsoft.VCLibs.x64.Debug.12.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+    <ResolvedSDKReference Include="C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\">
+      <Name>Microsoft.VCLibs.120.00.Debug</Name>
+      <Version>12.0.21005.1</Version>
+      <Architecture>x86</Architecture>
+      <FrameworkIdentity>Name = Microsoft.VCLibs.120.00.Debug, MinVersion = 12.0.21005.1</FrameworkIdentity>
+      <AppxLocation>C:\Program Files %28x86%29\Microsoft SDKs\Windows\v8.1\ExtensionSDKs\Microsoft.VCLibs\12.0\.\AppX\Debug\x86\Microsoft.VCLibs.x86.Debug.12.00.appx</AppxLocation>
+      <MoreInfo></MoreInfo>
+    </ResolvedSDKReference>
+  </ItemGroup>
+</Project>

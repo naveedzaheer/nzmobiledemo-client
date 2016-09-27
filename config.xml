@@ -107,4 +107,7 @@
     <splash src="res/screens/wp8/SplashScreenImage.jpg" width="480" height="800" />
   </platform>
   <plugin name="cordova-plugin-ms-azure-mobile-apps" spec="~2.0.0-beta" />
+  <plugin name="cordova-plugin-inappbrowser" version="1.4.0" />
+  <plugin name="cordova-sqlite-storage" version="1.4.7" />
+  <plugin name="cordova-plugin-ms-adal" version="0.8.1" />
 </widget>

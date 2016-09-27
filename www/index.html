@@ -20,24 +20,24 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://login.windows.net https://nzmobiledemo.azurewebsites.net; style-src 'self'; media-src *">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://login.windows.net https://tdimobiledemo.azurewebsites.net; style-src 'self'; media-src *">
         <meta name="format-detection" content="telephone=no" />
         <meta name="viewport" content="width=device-width, user-scalable=no" />
         <link rel="stylesheet" type="text/css" href="css/index.css" />
-        <title>Todo list: nzmobiledemo</title>
+        <title>Tasks: Demo</title>
     </head>
     <body>
         <div id='wrapper'>
             <article>
                 <header>
-                    <h2>Azure</h2>
-                    <h1>Mobile Apps</h1>
+                    <h2 id='userFullName'></h2>
+                    <h1>Welcome to Azure Mobile Apps</h1>
 
                     <ul id='todo-items'></ul>
                     <p id='summary'>Initializing...</p>
 
                     <form id='add-item'>
-                        <button type='submit' id='refresh'>Refresh</button>
+                        <button type='submit' id='refresh'>Search or Refresh</button>
                         <button type='submit'>Add</button>
                         <p></p>
                         <div>

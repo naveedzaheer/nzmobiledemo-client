@@ -1,0 +1,2 @@
+#TargetFrameworkVersion=:PlatformToolSet=v120:EnableManagedIncrementalBuild=false:VCToolArchitecture=Native64Bit
+debug|x64|C:\github\democlient\nzmobiledemo-client\plugins\cordova-sqlite-storage\src\windows\SQLite3-Win-RT\SQLite3\SQLite3.Windows\|

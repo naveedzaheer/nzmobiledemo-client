@@ -22,6 +22,15 @@
     var client,             // Connection to the Azure Mobile App backend
         todoItemTable;      // Reference to a table endpoint on backend
 
+    // The ADAL Settings
+
+    var adal = {
+        authority: 'https://login.windows.net/common',
+        resourceUri: 'https://tdimobiledemo.azurewebsites.net',
+        redirectUri: 'https://tdimobiledemo.azurewebsites.net/.auth/login/done',
+        clientId: '7db96c67-e40a-4e7a-ba36-18279f35f726'
+    };
+
     // Add an event listener to call our initialization routine when the host is ready
     document.addEventListener('deviceready', onDeviceReady, false);
 
@@ -33,13 +42,26 @@
     function onDeviceReady() {
 
         // Create a connection reference to our Azure Mobile Apps backend
-        client = new WindowsAzure.MobileServiceClient('https://nzmobiledemo.azurewebsites.net');
+        client = new WindowsAzure.MobileServiceClient('https://tdimobiledemo.azurewebsites.net');
 
-        client.login('aad')
-    .then(function () {
+        authenticate(function (data) {
+            console.log(data);
+            //$('#userFullName').innerHTML = data.userInfo.displayableId;
+            client.login('aad', { 'access_token': data.accessToken })
+            .then(initializeApp, function (error) {
+                console.error(error);
+                alert('Failed to authenticate to ZUMO!');
+            });
+        });
+    }
+
+    function initializeApp()
+    {
+        // Create a connection reference to our Azure Mobile Apps backend
+        //client = new WindowsAzure.MobileServiceClient('https://tdimobiledemo.azurewebsites.net');
 
         // Create a table reference
-        todoItemTable = client.getTable('todoitem');
+        todoItemTable = client.getTable('task');
 
         // Refresh the todoItems
         refreshDisplay();
@@ -47,7 +69,27 @@
         // Wire up the UI Event Handler for the Add Item
         $('#add-item').submit(addItemHandler);
         $('#refresh').on('click', refreshDisplay);
-    }, handleError);
+    }
+
+    function authenticate(authCompletedCallback) {
+        adal.context = new Microsoft.ADAL.AuthenticationContext(adal.authority);
+        adal.context.tokenCache.readItems().then(function (items) {
+            if (items.length > 0) {
+                adal.authority = items[0].authority;
+                adal.context = new Microsoft.ADAL.AuthenticationContext(adal.authority);
+            }
+
+            // Attempt to authorize user silently
+            adal.context.acquireTokenSilentAsync(adal.resourceUri, adal.clientId)
+            .then(authCompletedCallback, function (p) {
+                // We require user cridentials so triggers authentication dialog
+                adal.context.acquireTokenAsync(adal.resourceUri, adal.clientId, adal.redirectUri)
+                .then(authCompletedCallback, function (err) {
+                    console.error('Failed to authenticate via ADAL: ', err);
+                    alert("Failed to authenticate: " + err);
+                });
+            });
+        });
     }
 
     /**
@@ -62,6 +104,19 @@
             .read()                         // Read the results
             .then(createTodoItemList, handleError);
     }
+
+    ///**
+    // * Refresh the items within the page
+    // */
+    //function searchItems(categoryName) {
+    //    updateSummaryMessage('Searching Data from Azure');
+
+    //    // Execute a query for uncompleted items and process
+    //    todoItemTable
+    //        .where({ complete: false, category: categoryName })     // Set up the query
+    //        .read()                         // Read the results
+    //        .then(createTodoItemList, handleError);
+    //}
 
     /**
      * Updates the Summary Message
